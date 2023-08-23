@@ -6,7 +6,7 @@ $gray-color: #A7A7A7;
 $complementary-color: #CCCCCC;
 $font-buttons-category-color: #6C6C6C;
 $font-roboto: 'Roboto', sans-serif;
-
+$background_inputs: #e0e0e0;
 
 @mixin tablet {
     @media (min-width: 725px) {

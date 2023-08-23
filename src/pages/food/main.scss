@@ -3,18 +3,18 @@
 
 .food{
     font-family: $font-roboto;
-    display: grid;
+    display: flex;
     min-height: 100vh;
     background-color: #fefdf9;
-    
+    flex-direction: column;
+    align-items: center;
     &__header{
         position: relative;
         height: 40vh;
         display: flex;
         justify-content: center;
-      
+        width: 100%;
         @include tablet{
-      
          width: 100%;
          height: calc(300px + 1vw);
          padding: 30px 50px;
@@ -32,7 +32,6 @@
         }
          &__back{
             z-index: 1;
-            
          }
          &__media{
          //   width: 40%;
@@ -47,11 +46,10 @@
             display: flex;
             justify-content: space-between;
         }
-
         }
         @include desktop{
             height: calc(450px + 1vw);;
-            padding: 50px 300px;
+            padding: 50px 290px;
             justify-content: space-between;
             gap: 20px;
             &__textbox{
@@ -84,7 +82,6 @@
             height: 100%;
             object-fit: cover;
             border-radius: 0  0 20px 20px;
-            
             @include tablet{
                 border-radius: 20px;
             }
@@ -100,11 +97,12 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        width: 100%;
         @include tablet{
             padding: 0 100px;
         }
         @include desktop{
-            padding: 0px 500px;
+            padding: 0px 400px;
         }
         &__title{
             display: flex;
@@ -156,6 +154,7 @@
         padding: 20px;
         justify-content: center;
         gap: 20px;
+        width: 100%;
         @include desktop{
             padding: 30px;
         }
